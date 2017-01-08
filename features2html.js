@@ -2,8 +2,8 @@
 var FILE_ENCODING = 'utf-8';
 var INPUTDIR = 'examples/features';
 var TEMPLATESDIR = 'default/templates';
-var PRODUCTNAME = 'My Product Name';
-var AUTHOR = 'John Doe';
+var PRODUCTNAME = 'Chetri';
+var AUTHOR = 'Andrea Borg';
 var OUTPUTFILE = null;
 var LANGUAGE = 'en';
 var BREAKBEFOREWORD = null;
@@ -93,7 +93,8 @@ function create(){
       // write to default output dir. Create first if necessary
       fs.mkdir('output_features2html',function(e){
         if(!e || (e && e.code === 'EEXIST')){
-          var outputFilepath = 'output_features2html/features_' + moment().format('YYYYMMDD_HHmm') + '.html';
+          //var outputFilepath = 'output_features2html/features_' + moment().format('YYYYMMDD_HHmm') + '.html';
+            var outputFilepath = 'output_features2html/featureFile.html';
           writeOutput(docHtml, outputFilepath);
         } else {
           console.log(e);
